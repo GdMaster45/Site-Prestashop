@@ -1,0 +1,42 @@
+<?php
+/* Smarty version 4.3.4, created on 2024-07-18 05:24:56
+  from '/home/vol15_8/infinityfree.com/if0_36915431/htdocs/admin45/themes/new-theme/template/components/layout/confirmation_messages.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.4',
+  'unifunc' => 'content_6698df68718a85_43169662',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '04d75c1f9b3bf9b527477680a49ab53993f8ad0c' => 
+    array (
+      0 => '/home/vol15_8/infinityfree.com/if0_36915431/htdocs/admin45/themes/new-theme/template/components/layout/confirmation_messages.tpl',
+      1 => 1716302594,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6698df68718a85_43169662 (Smarty_Internal_Template $_smarty_tpl) {
+if ((isset($_smarty_tpl->tpl_vars['confirmations']->value)) && count($_smarty_tpl->tpl_vars['confirmations']->value) && $_smarty_tpl->tpl_vars['confirmations']->value) {?>
+  <div class="bootstrap">
+    <div class="alert alert-success" style="display:block;">
+      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['confirmations']->value, 'conf');
+$_smarty_tpl->tpl_vars['conf']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['conf']->value) {
+$_smarty_tpl->tpl_vars['conf']->do_else = false;
+?>
+        <?php echo $_smarty_tpl->tpl_vars['conf']->value;?>
+
+      <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    </div>
+  </div>
+<?php }
+}
+}
